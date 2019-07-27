@@ -13,20 +13,37 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
     <!-- stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <div class="container">
-        
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Cinema Trivia</h1>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-sm-12" id="startBtn">
+                <button type="button" class="btn btn-info btn-lg" id="start">Start</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12" id="game"></div>
+        </div>
     </div>
 
-    <script src="assets/javascript/app.js"></script>
+    <!-- Jquery before javascript or it will break code and not read document.onready -->
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- javascript -->
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    
 </body>
 
 </html>

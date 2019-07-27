@@ -1,3 +1,23 @@
+/* repeat image only on y-axis. image centered in page. background color after */
 body {
-    font-family: 'Arvo', serif;
+    background-image: url("../images/filmreel.jpg");
+    background-repeat: repeat-y;
+    background-position: 50%;
+    background-position-y: top;
+    background-color: #f3d8c7;
+    margin: 0 auto 0 auto;
+    font-family: 'Handlee', cursive;
+    font-size: 18px;
+    text-align: center;
+}
+/* create spacing between main content and background */
+.container {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    width: 960px;
+}
+/* styling added to div once it is created by javascript/jquery */
+#gameBody {
+    background-color: #fbfefb;
+    padding: 20px;
 }

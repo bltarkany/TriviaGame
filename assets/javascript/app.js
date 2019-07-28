@@ -142,7 +142,7 @@ var game = {
     results: function () {
         $("#timer").remove();
         $("#gameBody").html("<h2>Let's see how you did!</h2>");
-        $("#gameBody").append("<img src='assets/images/moon.jpg' alt='image' height='400' width='500'>");
+        $("#gameBody").append("<img src='assets/images/clap.gif' alt='image' height='208' width='500'>");
         $("#gameBody").append("<h3>Correct Answers: " + this.correct + "</h3>");
         $("#gameBody").append("<h3>Incorrect Answers: " + this.incorrect + "</h3>");
         $("#gameBody").append("<h3>Unanswered: " + (questions.length - (this.incorrect + this.correct)) + "</h3>");

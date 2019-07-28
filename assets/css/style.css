@@ -21,3 +21,7 @@ body {
     background-color: #fbfefb;
     padding: 20px;
 }
+/* change color or timer to stand out */
+h2 {
+    color: #92140c;
+}

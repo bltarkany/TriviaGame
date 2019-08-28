@@ -1,6 +1,10 @@
 # TriviaGame
 
-# Objectives
+### Overview
+
+In this assignment, You'll create a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Be sure to layout this app with valid HTML and stylish CSS.
+
+### Objectives
 
 1. Emphasizing the use of javascript and jquery together. 
 2. Timers at intervals.
@@ -10,9 +14,7 @@
 6. Linear gradient styling in css.
 7. Dynamic restart from multiple pages.
 
-### Overview
 
-In this assignment, You'll create a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Be sure to layout this app with valid HTML and stylish CSS.
 
 ### Before You Begin
 
@@ -32,9 +34,9 @@ In this assignment, You'll create a Trivia game using JavaScript for the logic a
 
 ### Option One: Basic Quiz (Timed Form)
 
-![Basic](Images/1-basic.jpg)
+![Cinema Trivia](https://github.com/bltarkany/TriviaGame/blob/master/assets/images/gamepic.png)
 
-**[Click Here to Watch the Demo](https://youtu.be/fBIj8YsA9dk)**.
+
 
 * You'll create a trivia form with multiple choice or true/false options (your choice).
 

@@ -17,6 +17,7 @@ let scoreMess = document.getElementById("score-mess");
 let playerScore = document.getElementById("player-score");
 
 // variable to store game counters and functions
+// is refactoring possible
 let game = {
   // game counters
   time: questions.length * 15,

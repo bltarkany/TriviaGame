@@ -4,7 +4,7 @@ body {
     background-repeat: repeat-y;
     background-position: 50%;
     background-position-y: top;
-    background-color: #f3d8c7;
+    background-color: #eee8ea;
     margin: 0 auto 0 auto;
     font-family: 'Handlee', cursive;
     font-size: 18px;
@@ -15,6 +15,18 @@ body {
     padding-top: 50px;
     padding-bottom: 100px;
     width: 960px;
+}
+/* title styling */
+#title {
+    font-size: 52px;
+}
+
+hr  {
+    border: 2px solid #b8dbd9;
+}
+/* start button styling */
+.startBtn {
+    background-color: #b8dbd9;
 }
 /* styling added to div once it is created by javascript/jquery */
 #gameBody {

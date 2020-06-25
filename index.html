@@ -21,6 +21,8 @@
 
 <body>
     <main class="container">
+        <br>
+        <br>
         <div class="row">
             <div class="col-sm-12">
                 <h1 id="title">Cinema Trivia</h1>
@@ -28,14 +30,19 @@
             </div>
         </div>
         <br>
-        <div class="row">
-            <div class="col-sm-12" id="startBtn">
+        <div id="startBtn" class="row">
+            <div class="col-sm-12">
                 <button type="button" class="btn btn-lg startBtn" id="start">Start</button>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm-12" id="game"></div>
+        <div class="row content">
+            <div class="col-sm-12" id="game">
+                <h2>Time Remaining: <span id="timer"></span></h2>
+                <h3 id="question">Test styling here</h3>
+                <div id="options"></div>
+            </div>
         </div>
+
     </main>
 
     <!-- Jquery before javascript or it will break code and not read document.onready -->

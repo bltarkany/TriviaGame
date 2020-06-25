@@ -1,4 +1,54 @@
 // global variables
+
+// var to store timer
+var timer;
+var timeContainer = document.getElementById('timer')
+
+// variable to store game counters and functions
+var game = {
+    // game counters
+    time = questions.length * 15,
+    correct = 0,
+    incorrect = 0, 
+    unanswered = 0,
+    currentIndex = 0,
+
+    // function to create countdown
+    countDown: function(){
+        // decrease by one 
+        game.time --;
+        timeContainer.textContent = game.time;
+        // conditional for zero time left on game clock
+        if (game.time <= 0){
+            game.time = 0;
+            game.done();
+        }
+    },
+
+    done: function (){
+        clearInterval(timer);
+
+    },
+
+    populate: function() {
+        // grab the current question
+        let current = questions[this.currentIndex];
+        // grab question slot and give it the current question
+        let title = document.getElementById('question');
+        title.textContent = current.question;
+
+        // iterate through the object array
+        current.choices.forEach(function(choice, i){
+            let option = document.createElement('button');
+            option.classList('choice');
+            option.setAttribute('value', choice)
+        })
+       
+    }
+
+
+}
+
 // creates stop when done is clicked
 $(document).on("click", "#end", function () {
     game.done();

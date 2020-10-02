@@ -57,7 +57,14 @@ let game = {
     },
 
     checkAnswer: () => {
-
+        if(this.value === questions[currentIndex].correctAnswer){
+            game.correct++;
+            // display correct tab
+        } else {
+            game.incorrect++;
+            game.time -= 5;
+            // display incorrect tab
+        }
     }
 
 

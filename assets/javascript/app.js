@@ -1,11 +1,11 @@
 // global variables
 
 // var to store timer
-var timer;
-var timeContainer = document.getElementById('timer')
+let timer;
+let timeContainer = document.getElementById('timer')
 
 // variable to store game counters and functions
-var game = {
+let game = {
     // game counters
     time = questions.length * 15,
     correct = 0,
@@ -21,6 +21,7 @@ var game = {
         // conditional for zero time left on game clock
         if (game.time <= 0){
             game.time = 0;
+            timeContainer.textContent = game.time;
             game.done();
         }
     },
@@ -40,8 +41,9 @@ var game = {
         // iterate through the object array
         current.choices.forEach(function(choice, i){
             let option = document.createElement('button');
-            option.classList('choice');
-            option.setAttribute('value', choice)
+            option.classList.add('choice');
+            option.setAttribute('value', choice);
+
         })
        
     }
@@ -60,7 +62,7 @@ $(document).on("click", "#restart", function () {
 });
 
 // counters
-var game = {
+let game = {
     correct: 0,
     incorrect: 0,
     unanswered: 0,
@@ -144,7 +146,7 @@ var game = {
 }
 
 // variable for the interval counter
-var countDown;
+let countDown;
 
 
 // timers

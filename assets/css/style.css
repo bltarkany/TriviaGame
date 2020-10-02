@@ -29,10 +29,12 @@ hr  {
     border: 2px solid #b8dbd9;
 }
 
-/* start button styling */
+/* start & answer button styling */
+.choice,
 .startBtn {
     background-color: #b8dbd9;
 }
+
 
 /* styling added to div once it is created by javascript/jquery */
 #gameBody {

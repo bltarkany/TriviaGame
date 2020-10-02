@@ -38,14 +38,26 @@ let game = {
         let title = document.getElementById('question');
         title.textContent = current.question;
 
+        // empty btn div
+        let optionEl = document.getElementById('options');
+        optionEl.innerHTML = '';
+
         // iterate through the object array
         current.choices.forEach(function(choice, i){
             let option = document.createElement('button');
-            option.classList.add('choice');
+            option.classList.add('btn btn-lg choice');
             option.setAttribute('value', choice);
+            option.textContent = choice;
+            option.onclick = game.checkAnswer;
 
-        })
+            // append each button to the DOM 
+            optionEl.appendChild(option);
+        });
        
+    },
+
+    checkAnswer: () => {
+
     }
 
 

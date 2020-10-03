@@ -38,6 +38,10 @@ hr {
   background-color: #b8dbd9;
   box-shadow: 10px 10px 5px 1px #eee8ea;
 }
+.choice {
+    display: block;
+    margin-bottom: 5px;
+}
 
 /* styling the game element */
 #welcome,

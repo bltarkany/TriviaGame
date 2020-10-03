@@ -36,9 +36,11 @@ hr {
 .choice,
 .startBtn {
     background-color: #b8dbd9;
+    box-shadow: 10px 10px 5px 1px #eee8ea;
 }
 
 /* styling the game element */
+#welcome,
 #game {
     border: 2px groove #b8dbd9;
     border-radius: 10px;

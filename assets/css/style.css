@@ -13,11 +13,14 @@ body {
 
 /* create a smaller display for game and high scores */
 .content {
+    border: 2px groove #92140c;
+    border-radius: 10px;
     background-color: #ffffff;
     max-width: 540px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
+    box-shadow: 10px 10px 5px 1px #eee8ea;
 }
 
 /* title styling */
@@ -25,8 +28,8 @@ body {
     font-size: 52px;
 }
 
-hr  {
-    border: 2px solid #b8dbd9;
+hr {
+    border: 1px solid #b8dbd9;
 }
 
 /* start & answer button styling */
@@ -35,6 +38,13 @@ hr  {
     background-color: #b8dbd9;
 }
 
+/* styling the game element */
+#game {
+    border: 2px groove #b8dbd9;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 10px 10px 5px 1px #eee8ea;
+}
 
 /* styling added to div once it is created by javascript/jquery */
 #gameBody {

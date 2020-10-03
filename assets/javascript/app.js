@@ -74,9 +74,14 @@ let game = {
         }
     },
     restart: () =>{
+        // reset the game counters
         game.time = questions.length * 15;
         game.correct = 0;
-
+        game.incorrect = 0;
+        game.unanswered = 0;
+        game.currentIndex = 0;
+        // run the start quiz function
+        
     }
 
 }

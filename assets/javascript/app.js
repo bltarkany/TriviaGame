@@ -57,7 +57,7 @@ let game = {
     },
 
     checkAnswer: () => {
-        if(this.value === questions[currentIndex].correctAnswer){
+        if(this.value === questions[game.currentIndex].correctAnswer){
             game.correct++;
             // display correct tab
         } else {
@@ -65,8 +65,19 @@ let game = {
             game.time -= 5;
             // display incorrect tab
         }
-    }
 
+        game.currentIndex++;
+        if (game.currentIndex ===  questions.length){
+            game.done();
+        } else {
+            game.populate();
+        }
+    },
+    restart: () =>{
+        game.time = questions.length * 15;
+        game.correct = 0;
+
+    }
 
 }
 

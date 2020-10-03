@@ -1,65 +1,86 @@
 /* repeat image only on y-axis. image centered in page. background color after */
 body {
-    background-image: url("../images/filmreel.jpg");
-    background-repeat: repeat-y;
-    background-position: 50%;
-    background-position-y: top;
-    background-color: #eee8ea;
-    margin: 0 auto 0 auto;
-    font-family: 'Handlee', cursive;
-    font-size: 18px;
-    text-align: center;
+  background-image: url("../images/filmreel.jpg");
+  background-repeat: repeat-y;
+  background-position: 50%;
+  background-position-y: top;
+  background-color: #eee8ea;
+  margin: 0 auto 0 auto;
+  font-family: "Handlee", cursive;
+  font-size: 18px;
+  text-align: center;
 }
 
 /* create a smaller display for game and high scores */
 .content {
-    border: 2px groove #92140c;
-    border-radius: 10px;
-    background-color: #ffffff;
-    max-width: 540px;
-    margin: 0 auto;
-    padding: 25px;
-    text-align: center;
-    box-shadow: 10px 10px 5px 1px #eee8ea;
+  border: 2px groove #92140c;
+  border-radius: 10px;
+  background-color: #ffffff;
+  max-width: 540px;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 10px 10px 5px 1px #eee8ea;
 }
 
 /* title styling */
 #title {
-    font-size: 52px;
+  font-size: 52px;
 }
 
 hr {
-    border: 1px solid #b8dbd9;
+  border: 1px solid #b8dbd9;
 }
 
 /* start & answer button styling */
 .choice,
 .startBtn {
-    background-color: #b8dbd9;
-    box-shadow: 10px 10px 5px 1px #eee8ea;
+  background-color: #b8dbd9;
+  box-shadow: 10px 10px 5px 1px #eee8ea;
 }
 
 /* styling the game element */
 #welcome,
 #game {
-    border: 2px groove #b8dbd9;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 10px 10px 5px 1px #eee8ea;
+  border: 2px groove #b8dbd9;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 10px 10px 5px 1px #eee8ea;
+}
+
+/* styling the correct and wrong displays */
+#correct,
+#wrong {
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  max-width: 400px;
+  margin: 0 auto;
+  color: black;
+}
+#correct {
+  background-color: #14b82a;
+}
+#wrong {
+  background-color: #ff0000;
+}
+#correct h3,
+#wrong h3 {
+    font-weight: bold;
 }
 
 /* styling added to div once it is created by javascript/jquery */
 #gameBody {
-    background-color: #fbfefb;
-    padding: 20px;
+  background-color: #fbfefb;
+  padding: 20px;
 }
 
 /* change color or timer to stand out */
 h2 {
-    color: #92140c;
+  color: #92140c;
 }
 
 /* hide css styling to hide sections */
 .hide {
-    display: none;
+  display: none;
 }

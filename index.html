@@ -2,63 +2,90 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Cinema Trivia</title>
 
     <!-- reset -->
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet" />
     <!-- stylesheet -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 
 <body>
     <main class="container">
-        <br>
-        <br>
+        <br />
+        <br />
         <section class="row">
             <div class="col-sm-12">
                 <h1 id="title">Cinema Trivia</h1>
-                <hr>
+                <hr />
             </div>
         </section>
-        <br>
-        <br>
+        <br />
+        <br />
         <section id="startBtn" class="row content">
             <div id="welcome" class="col-sm-12">
                 <h3>Welcome to Cinema Trivia</h3>
-                <p>Let's test you Cinema knowledge! Click the start button to begin and
-                    add you name to the leader board. 
+                <p>
+                    Let's test you Cinema knowledge! Click the start button to begin and
+                    add you name to the leader board.
                 </p>
-                <button type="button" class="btn btn-lg startBtn" id="start">Start</button>
+                <button type="button" class="btn btn-lg startBtn" id="start">
+                    Start
+                </button>
             </div>
         </section>
-        <section class="row content hide">
+        <section id="game-div" class="row content hide">
             <div class="col-sm-12" id="game">
                 <h2>Time Remaining: <span id="timer"></span></h2>
                 <h3 id="question">Test styling here</h3>
                 <div id="options"></div>
             </div>
         </section>
-        <br>
+        <br />
         <section class="row">
             <div class="col-sm-12">
-                <div id="correct">
+                <div id="correct" class="hide">
                     <h3>Correct!!</h3>
                 </div>
-                <div id="wrong">
+                <div id="wrong" class="hide">
                     <h3>Wrong!!</h3>
                 </div>
             </div>
         </section>
 
+        <!-- Button trigger modal -->
+        <!-- <button  type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+            Launch static backdrop modal
+        </button> -->
+        <!-- Modal -->
+        <!-- <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                            Close
+                        </button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
     </main>
 
     <!-- Jquery before javascript or it will break code and not read document.onready -->
@@ -68,7 +95,6 @@
     <!-- javascript -->
     <script src="assets/javascript/questions.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
-    
 </body>
 
 </html>

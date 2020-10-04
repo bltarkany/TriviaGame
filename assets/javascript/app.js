@@ -7,7 +7,8 @@ let timeContainer = document.getElementById("timer");
 let welcome = document.getElementById("startBtn");
 let gameDiv = document.getElementById("game-div");
 let correctDiv = document.getElementById("correct");
-let wrongDiv = document.getElementById("wrong");
+let message = document.getElementById('res-mes');
+let wrongDiv = document.getElementById('wrong');
 
 // variable to store game counters and functions
 let game = {
@@ -35,6 +36,7 @@ function done() {
   clearInterval(timer);
   console.log("done function called");
   // create save high scores options
+
 }
 
 function populate() {
@@ -62,25 +64,28 @@ function populate() {
 }
 
 function checkAnswer() {
-  console.log(this.value);
-  console.log(this);
+  
   if (this.value === questions[game.currentIndex].correctAnswer) {
     game.correct++;
     // display correct tab
-    correctDiv.classList.remove("hide");
-    setTimeout(() => {
-      correctDiv.classList.add("hide");
-    }, 1000);
+    message.textContent = `Correct!!`;
+    correctDiv.classList.remove("wrong");
+    correctDiv.classList.add("correct");
+    
   } else {
     game.incorrect++;
     game.time -= 10;
     timeContainer.textContent = game.time;
     // display incorrect tab
-    wrongDiv.classList.remove("hide");
-    setInterval(() => {
-      wrongDiv.classList.add("hide");
-    }, 1000);
+    message.textContent = `Wrong!!`;
+    correctDiv.classList.remove("correct");
+    correctDiv.classList.add("wrong");
   }
+
+  correctDiv.classList.remove("hide");
+    setTimeout(function() {
+      correctDiv.classList.add("hide");
+    }, 1000);
 
   game.currentIndex++;
   if (game.currentIndex === questions.length) {

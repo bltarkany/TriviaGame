@@ -53,8 +53,7 @@ hr {
 }
 
 /* styling the correct and wrong displays */
-#correct,
-#wrong {
+.result {
   border-radius: 10px;
   padding-top: 10px;
   padding-bottom: 5px;
@@ -62,14 +61,13 @@ hr {
   margin: 0 auto;
   color: black;
 }
-#correct {
+.correct {
   background-color: #14b82a;
 }
-#wrong {
+.wrong {
   background-color: #ff0000;
 }
-#correct h3,
-#wrong h3 {
+.result h3 {
     font-weight: bold;
 }
 

@@ -4,12 +4,19 @@ body {
   background-repeat: repeat-y;
   background-position: 50%;
   background-position-y: top;
-  background-color: #eee8ea;
+  /* background-color: #eee8ea; */
+  background-color: #b7b8b8;
   margin: 0 auto 0 auto;
   font-family: "Handlee", cursive;
   font-size: 18px;
   text-align: center;
 }
+
+nav {
+    background-color: #b7b8b8;
+}
+
+
 
 /* create a smaller display for game and high scores */
 .content {
@@ -88,3 +95,9 @@ h2 {
 .hide {
   display: none;
 }
+
+footer {
+    background-color: #b7b8b8;
+    padding-top: 10px;
+}
+

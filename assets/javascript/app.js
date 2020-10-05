@@ -113,7 +113,4 @@ $(document).ready(function () {
     start();
   });
 
-  // $('#staticBackdrop').on('shown.bs.modal', function () {
-  //     $('#staticBackdrop').trigger('focus')
-  // });
 });

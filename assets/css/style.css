@@ -39,13 +39,15 @@ hr {
   box-shadow: 10px 10px 5px 1px #eee8ea;
 }
 .choice {
-    display: block;
-    margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 /* styling the game element */
+#score,
 #welcome,
 #game {
+  background-color: #ffffff;
   border: 2px groove #b8dbd9;
   border-radius: 10px;
   padding: 15px;
@@ -68,7 +70,7 @@ hr {
   background-color: #ff0000;
 }
 .result h3 {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* styling added to div once it is created by javascript/jquery */

@@ -16,14 +16,12 @@ nav {
     background-color: #b7b8b8;
 }
 
-
-
 /* create a smaller display for game and high scores */
 .content {
   border: 2px groove #92140c;
   border-radius: 10px;
   background-color: #ffffff;
-  max-width: 540px;
+  max-width: 580px;
   margin: 0 auto;
   padding: 25px;
   text-align: center;
@@ -87,7 +85,7 @@ hr {
 }
 
 /* change color or timer to stand out */
-h2 {
+h2, h4 {
   color: #92140c;
 }
 

@@ -63,8 +63,6 @@
                 <hr />
             </div>
         </section>
-        <br />
-        <br />
         <section id="startBtn" class="row content">
             <div id="welcome" class="col-sm-12">
                 <h3>Welcome to Cinema Trivia</h3>
@@ -79,18 +77,18 @@
         </section>
         <section id="game-div" class="row content hide">
             <div class="col-sm-12" id="game">
-                <h2>Time Remaining: <span id="timer"></span> sec.</h2>
-                <h3 id="question">Test styling here</h3>
+                <h4>Time Remaining: <span id="timer"></span> sec.</h4>
+                <h5 id="question">Test styling here</h5>
                 <div id="options"></div>
             </div>
         </section>
-        <br />
+        <br>
         <section class="row">
             <div class="col-sm-12">
                 <div id="correct" class="result hide">
                     <h3 id="res-mes">Correct!!</h3>
                 </div>
-                <div id="score" class="result">
+                <div id="score" class="result hide">
                     <h3 id="score-mess"></h3>
                     <p id="player-score"></p>
                     <!-- Button trigger modal -->
@@ -125,7 +123,7 @@
             </div>
         </div>
         <footer class="fixed-bottom">
-            <h1>Good Luck &#9752; </h1>
+            <h2>Good Luck &#9752; </h2>
         </footer>
     </main>
 
@@ -147,6 +145,7 @@
     <!-- javascript -->
     <script src="assets/javascript/questions.js"></script>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script src="./assets/javascript/highscores.js"></script>
 </body>
 
 </html>

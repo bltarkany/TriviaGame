@@ -10,6 +10,7 @@ let correctDiv = document.getElementById("correct");
 let message = document.getElementById('res-mes');
 let wrongDiv = document.getElementById('wrong');
 
+
 // variable to store game counters and functions
 let game = {
   // game counters

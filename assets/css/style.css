@@ -13,7 +13,7 @@ body {
 }
 
 nav {
-    background-color: #b7b8b8;
+  background-color: #b7b8b8;
 }
 
 /* create a smaller display for game and high scores */
@@ -68,6 +68,17 @@ hr {
   margin: 0 auto;
   color: black;
 }
+#score {
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: black;
+}
+.score-img {
+    margin: 20px;
+}
 .correct {
   background-color: #14b82a;
 }
@@ -85,7 +96,8 @@ hr {
 }
 
 /* change color or timer to stand out */
-h2, h4 {
+h2,
+h4 {
   color: #92140c;
 }
 
@@ -95,7 +107,6 @@ h2, h4 {
 }
 
 footer {
-    background-color: #b7b8b8;
-    padding-top: 10px;
+  background-color: #b7b8b8;
+  padding-top: 10px;
 }
-

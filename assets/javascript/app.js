@@ -42,6 +42,12 @@ function done() {
   gameDiv.classList.add("hide");
   scoreDiv.classList.remove("hide");
   // create save high scores options
+  document.getElementById('score-mess').textContent = `Well, well nicely done`;
+  document.getElementById('player-score').textContent = `Your new score is ${game.time}`;
+  let image = document.createElement('img');
+  image.setAttribute("src", "./assets/images/clap.gif");
+  image.setAttribute('class', 'score-img');
+  scoreDiv.append(image);
 
 }
 

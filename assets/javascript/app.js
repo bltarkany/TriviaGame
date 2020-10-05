@@ -115,6 +115,15 @@ function start() {
   populate();
 }
 
+function restart(){
+    welcome.classList.remove('hide');
+    scoreDiv.classList.add('hide');
+}
+
+function addPlayer() {
+    restart();
+}
+
 // Main Game Logic
 // ======================================================================
 $(document).ready(function () {
@@ -122,4 +131,10 @@ $(document).ready(function () {
   $("#start").on("click", function () {
     start();
   });
+
+  $("#player").on('click', function(){
+      addPlayer();
+  });
+
+  $('#')
 });

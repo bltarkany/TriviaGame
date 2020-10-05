@@ -7,8 +7,11 @@ let timeContainer = document.getElementById("timer");
 let welcome = document.getElementById("startBtn");
 let gameDiv = document.getElementById("game-div");
 let correctDiv = document.getElementById("correct");
-let message = document.getElementById('res-mes');
-let wrongDiv = document.getElementById('wrong');
+let message = document.getElementById("res-mes");
+let wrongDiv = document.getElementById("wrong");
+let scoreDiv = document.getElementById("score");
+let scoreMess = document.getElementById('score-mess'); 
+let playerScore = document.getElementById('player-score');
 
 
 // variable to store game counters and functions
@@ -36,6 +39,8 @@ function countDown() {
 function done() {
   clearInterval(timer);
   console.log("done function called");
+  gameDiv.classList.add("hide");
+  scoreDiv.classList.remove("hide");
   // create save high scores options
 
 }
@@ -65,14 +70,12 @@ function populate() {
 }
 
 function checkAnswer() {
-  
   if (this.value === questions[game.currentIndex].correctAnswer) {
     game.correct++;
     // display correct tab
     message.textContent = `Correct!!`;
     correctDiv.classList.remove("wrong");
     correctDiv.classList.add("correct");
-    
   } else {
     game.incorrect++;
     game.time -= 10;
@@ -84,9 +87,9 @@ function checkAnswer() {
   }
 
   correctDiv.classList.remove("hide");
-    setTimeout(function() {
-      correctDiv.classList.add("hide");
-    }, 1000);
+  setTimeout(function () {
+    correctDiv.classList.add("hide");
+  }, 1000);
 
   game.currentIndex++;
   if (game.currentIndex === questions.length) {
@@ -113,5 +116,4 @@ $(document).ready(function () {
   $("#start").on("click", function () {
     start();
   });
-
 });

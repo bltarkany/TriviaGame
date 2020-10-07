@@ -136,5 +136,5 @@ $(document).ready(function () {
       addPlayer();
   });
 
-  $('#')
+  $('# ')
 });

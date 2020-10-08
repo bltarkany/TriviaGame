@@ -1,5 +1,8 @@
 // global variables
 
+// highscores grab from local storage
+let scoreHistory = JSON.parse(window.localStorage.getItem('highscores')) || [];
+
 // var to store timer
 let timer;
 let timeContainer = document.getElementById("timer");
@@ -136,5 +139,5 @@ $(document).ready(function () {
       addPlayer();
   });
 
-  $('# ')
+  $('#leader-board').on()
 });

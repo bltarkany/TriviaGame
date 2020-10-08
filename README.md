@@ -2,7 +2,7 @@
 
 ### Overview
 
-In this assignment, You'll create a Trivia game using JavaScript for the logic and jQuery to manipulate HTML. Be sure to layout this app with valid HTML and stylish CSS.
+In this app I have created a Trivia game using JavaScript for the logic and in some instances jQuery to manipulate HTML. Utilizing Bootstrap as my styling library and added CSS styling of my own.
 
 ### Objectives
 
@@ -10,13 +10,18 @@ In this assignment, You'll create a Trivia game using JavaScript for the logic a
 2. Timers at intervals.
 3. Dynamically updating the HTML using javascript and jquery at predetermined times
 4. Use of select from the options forms
-5. Use of radio inputs
-6. Linear gradient styling in css.
-7. Dynamic restart from multiple pages.
+5. Local Storage to keep the leader Board persistent 
+6. Linear gradient styling in css
+7. Dynamic restart from of game
 
 
+### Demo
 
-### Before You Begin
+[Play Game Here](https://bltarkany.github.io/TriviaGame/)
+
+![Cinema Trivia](https://github.com/bltarkany/TriviaGame/blob/master/assets/images/gamepic.png)
+
+### To Create One of Your Own
 
 1. Create a GitHub repo called `TriviaGame`, then clone the repo to your computer.
 
@@ -30,13 +35,7 @@ In this assignment, You'll create a Trivia game using JavaScript for the logic a
    * In your `javascript` folder, create an `app.js` file; here you'll write all of your JavaScript and jQuery.
    * In your `images` folder, save whatever images you'd like to use in this exercise.
 
-6. Choose a game to build from your options below. 
-
-### Option One: Basic Quiz (Timed Form)
-
-![Cinema Trivia](https://github.com/bltarkany/TriviaGame/blob/master/assets/images/gamepic.png)
-
-
+6. Choose a game to build of your own with functionality from below. 
 
 * You'll create a trivia form with multiple choice or true/false options (your choice).
 

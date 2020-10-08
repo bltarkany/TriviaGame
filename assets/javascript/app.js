@@ -124,9 +124,14 @@ function restart(){
 }
 
 function addPlayer() {
-    restart();
     // add fucntionality to save player to the high scores list in local storage
-
+    let newScore = {
+        player: document.getElementById('player').value,
+        score: game.time
+    };
+    scoreHistory.push(newScore);
+    window.localStorage.setItem('highscores', JSON.stringify(scoreHistory));
+    restart();
 }
 
 function leaders(){
@@ -146,7 +151,7 @@ $(document).ready(function () {
     start();
   });
 
-  $("#player").on('click', function(){
+  $("#playerBtn").on('click', function(){
       addPlayer();
   });
 

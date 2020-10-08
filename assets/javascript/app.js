@@ -126,6 +126,7 @@ function restart() {
   game.currentIndex = 0;
   game.unanswered = 0;
   game.time = questions.length * 15;
+  timeContainer.textContent = game.time;
 }
 
 function addPlayer() {

@@ -136,6 +136,9 @@ function addPlayer() {
 
 function leaders(){
     // add each leader to the leader modal
+    scoreHistory.forEach((player, i) => {
+        
+    })
 }
 
 function clearScore(){

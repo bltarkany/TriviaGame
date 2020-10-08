@@ -137,13 +137,14 @@ function addPlayer() {
 
 function leaders(){
     // empty leader board and repopulate
-    document.getElementById('leaders').innerHTML = '';
+    let lbd = document.getElementById('leaders');
+    lbd.innerHTML = '';
     // add each leader to the leader modal
     scoreHistory.forEach((player, i) => {
         let li = document.createElement('li');
         li.setAttribute('class', 'list-group-item');
         li.textContent = `${i + 1}. ${player.player}  --  ${player.score}`
-        document.getElementById('leaders').append(li);
+        document.getElementById('leaders').appendChild(li);
     });
 }
 
@@ -166,9 +167,9 @@ $(document).ready(function () {
       addPlayer();
   });
 
-  $('#leader-board').on('click', function() {
+//   $('#leader-board').on('click', function() {
 
-  });
+//   });
 
   $('#clear').on('click', () =>{
       clearScore();

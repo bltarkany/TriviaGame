@@ -140,7 +140,7 @@ function leaders(){
     document.getElementById('leaders').innerHTML = '';
     // sort players by score
     let sorted = scoreHistory.sort((a, b) => {
-        return a.score - b.score;
+        return b.score - a.score;
     })
     // add each leader to the leader modal
     sorted.forEach((player, i) => {

@@ -125,6 +125,12 @@ function restart(){
 
 function addPlayer() {
     restart();
+    // add fucntionality to save player to the high scores list in local storage
+
+}
+
+function leaders(){
+    // add each leader to the leader modal
 }
 
 // Main Game Logic
@@ -139,5 +145,11 @@ $(document).ready(function () {
       addPlayer();
   });
 
-  $('#leader-board').on()
+  $('#leader-board').on('click', function() {
+
+  });
+
+  $('#clear').on('click', () =>{
+      clearScore();
+  })
 });

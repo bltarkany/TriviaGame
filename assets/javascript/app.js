@@ -131,17 +131,20 @@ function addPlayer() {
     };
     scoreHistory.push(newScore);
     window.localStorage.setItem('highscores', JSON.stringify(scoreHistory));
+    leaders();
     restart();
 }
 
 function leaders(){
+    // empty leader board and repopulate
+    document.getElementById('leaders').innerHTML = '';
     // add each leader to the leader modal
     scoreHistory.forEach((player, i) => {
         let li = document.createElement('li');
         li.setAttribute('class', 'list-group-item');
         li.textContent = `${i + 1}. ${player.player}  --  ${player.score}`
         document.getElementById('leaders').append(li);
-    })
+    });
 }
 
 function clearScore(){
@@ -152,6 +155,8 @@ function clearScore(){
 // Main Game Logic
 // ======================================================================
 $(document).ready(function () {
+    // set the leader board
+    leaders();
   // event.preventDefault();
   $("#start").on("click", function () {
     start();

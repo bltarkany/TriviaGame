@@ -133,6 +133,11 @@ function leaders(){
     // add each leader to the leader modal
 }
 
+function clearScore(){
+    window.localStorage.removeItem('highscores');
+    location.reload();
+}
+
 // Main Game Logic
 // ======================================================================
 $(document).ready(function () {

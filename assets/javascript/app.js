@@ -125,6 +125,7 @@ function restart() {
   game.incorrect = 0;
   game.currentIndex = 0;
   game.unanswered = 0;
+  game.time = questions.length * 15;
 }
 
 function addPlayer() {

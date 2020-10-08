@@ -137,10 +137,13 @@ function addPlayer() {
 
 function leaders(){
     // empty leader board and repopulate
-    let lbd = document.getElementById('leaders');
-    lbd.innerHTML = '';
+    document.getElementById('leaders').innerHTML = '';
+    // sort players by score
+    let sorted = scoreHistory.sort((a, b) => {
+        return a.score - b.score;
+    })
     // add each leader to the leader modal
-    scoreHistory.forEach((player, i) => {
+    sorted.forEach((player, i) => {
         let li = document.createElement('li');
         li.setAttribute('class', 'list-group-item');
         li.textContent = `${i + 1}. ${player.player}  --  ${player.score}`

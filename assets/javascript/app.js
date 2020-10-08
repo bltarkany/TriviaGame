@@ -137,7 +137,10 @@ function addPlayer() {
 function leaders(){
     // add each leader to the leader modal
     scoreHistory.forEach((player, i) => {
-        
+        let li = document.createElement('li');
+        li.setAttribute('class', 'list-group-item');
+        li.textContent = `${i + 1}. ${player.player}  --  ${player.score}`
+        document.getElementById('leaders').append(li);
     })
 }
 

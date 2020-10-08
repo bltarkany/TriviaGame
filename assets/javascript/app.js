@@ -1,7 +1,7 @@
 // global variables
 
 // highscores grab from local storage
-let scoreHistory = JSON.parse(window.localStorage.getItem('highscores')) || [];
+let scoreHistory = JSON.parse(window.localStorage.getItem("highscores")) || [];
 
 // var to store timer
 let timer;
@@ -13,9 +13,8 @@ let correctDiv = document.getElementById("correct");
 let message = document.getElementById("res-mes");
 let wrongDiv = document.getElementById("wrong");
 let scoreDiv = document.getElementById("score");
-let scoreMess = document.getElementById('score-mess'); 
-let playerScore = document.getElementById('player-score');
-
+let scoreMess = document.getElementById("score-mess");
+let playerScore = document.getElementById("player-score");
 
 // variable to store game counters and functions
 let game = {
@@ -45,13 +44,14 @@ function done() {
   gameDiv.classList.add("hide");
   scoreDiv.classList.remove("hide");
   // create save high scores options
-  document.getElementById('score-mess').textContent = `Well, well nicely done`;
-  document.getElementById('player-score').textContent = `Your new score is ${game.time}`;
-  let image = document.createElement('img');
+  document.getElementById("score-mess").textContent = `Well, well nicely done`;
+  document.getElementById(
+    "player-score"
+  ).textContent = `Your new score is ${game.time}`;
+  let image = document.createElement("img");
   image.setAttribute("src", "./assets/images/clap.gif");
-  image.setAttribute('class', 'score-img');
+  image.setAttribute("class", "score-img");
   scoreDiv.append(image);
-
 }
 
 function populate() {
@@ -118,59 +118,63 @@ function start() {
   populate();
 }
 
-function restart(){
-    welcome.classList.remove('hide');
-    scoreDiv.classList.add('hide');
+function restart() {
+  welcome.classList.remove("hide");
+  scoreDiv.classList.add("hide");
+  game.correct = 0;
+  game.incorrect = 0;
+  game.currentIndex = 0;
+  game.unanswered = 0;
 }
 
 function addPlayer() {
-    // add functionality to save player to the high scores list in local storage
-    let newScore = {
-        player: document.getElementById('player').value,
-        score: game.time
-    };
-    scoreHistory.push(newScore);
-    window.localStorage.setItem('highscores', JSON.stringify(scoreHistory));
-    leaders();
-    restart();
+  // add functionality to save player to the high scores list in local storage
+  let newScore = {
+    player: document.getElementById("player").value,
+    score: game.time,
+  };
+  scoreHistory.push(newScore);
+  window.localStorage.setItem("highscores", JSON.stringify(scoreHistory));
+  leaders();
+  restart();
 }
 
-function leaders(){
-    // empty leader board and repopulate
-    document.getElementById('leaders').innerHTML = '';
-    // sort players by score
-    let sorted = scoreHistory.sort((a, b) => {
-        return b.score - a.score;
-    })
-    // add each leader to the leader modal
-    sorted.forEach((player, i) => {
-        let li = document.createElement('li');
-        li.setAttribute('class', 'list-group-item');
-        li.textContent = `${i + 1}. ${player.player}  --  ${player.score}`
-        document.getElementById('leaders').appendChild(li);
-    });
+function leaders() {
+  // empty leader board and repopulate
+  document.getElementById("leaders").innerHTML = "";
+  // sort players by score
+  let sorted = scoreHistory.sort((a, b) => {
+    return b.score - a.score;
+  });
+  // add each leader to the leader modal
+  sorted.forEach((player, i) => {
+    let li = document.createElement("li");
+    li.setAttribute("class", "list-group-item");
+    li.textContent = `${i + 1}. ${player.player}  --  ${player.score}`;
+    document.getElementById("leaders").appendChild(li);
+  });
 }
 
-function clearScore(){
-    window.localStorage.removeItem('highscores');
-    location.reload();
+function clearScore() {
+  window.localStorage.removeItem("highscores");
+  location.reload();
 }
 
 // Main Game Logic
 // ======================================================================
 $(document).ready(function () {
-    // set the leader board
-    leaders();
+  // set the leader board
+  leaders();
   // event.preventDefault();
   $("#start").on("click", function () {
     start();
   });
 
-  $("#playerBtn").on('click', function(){
-      addPlayer();
+  $("#playerBtn").on("click", function () {
+    addPlayer();
   });
 
-  $('#clear').on('click', () =>{
-      clearScore();
-  })
+  $("#clear").on("click", () => {
+    clearScore();
+  });
 });

@@ -124,7 +124,7 @@ function restart(){
 }
 
 function addPlayer() {
-    // add fucntionality to save player to the high scores list in local storage
+    // add functionality to save player to the high scores list in local storage
     let newScore = {
         player: document.getElementById('player').value,
         score: game.time
@@ -169,10 +169,6 @@ $(document).ready(function () {
   $("#playerBtn").on('click', function(){
       addPlayer();
   });
-
-//   $('#leader-board').on('click', function() {
-
-//   });
 
   $('#clear').on('click', () =>{
       clearScore();
